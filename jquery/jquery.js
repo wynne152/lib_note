@@ -12,6 +12,12 @@
  * Date: 2015-04-28T16:01Z
  */
 
+/*wynne-2016.11.7:
+	匿名函数(function(){})();
+	(function(x,y){})(参数1，参数2); //后面的括号是传入的参数
+	jquery的参数1是window,
+*/
+
 (function( global, factory ) {
 
 	if ( typeof module === "object" && typeof module.exports === "object" ) {
@@ -36,7 +42,7 @@
 
 // Pass this if window is not defined yet
 }(typeof window !== "undefined" ? window : this, function( window, noGlobal ) {
-
+	
 // Support: Firefox 18+
 // Can't be in strict mode, several libs including ASP.NET trace
 // the stack via arguments.caller.callee and Firefox dies if
